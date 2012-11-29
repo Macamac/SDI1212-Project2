@@ -68,13 +68,14 @@ for (var enemyDeath = 3; enemyDeath > 0; enemyDeath--) {
 console.log("No more remain and now " + playerName + " can rest for a bit.");
 console.log("After a moment of silence, " + playerName + " hears rustling in the bushes near him.");
 var rescuePlayer = function(name) {
-	var enemiesPresent = 0,
+	var scene = ["sky", "moon", "bushes", "trees", "lake"],
+		enemiesPresent = 0,
 		enemyDeath,
 		foundYou;
 		if (enemiesPresent > 0){ 
 		enemyDeath = 0; 
 		} else {enemyDeath = 3};
-	foundYou = playerPartner + " came out of the bushes, hands high. \"" + name + " it's me, " + playerPartner + "! I can't believe you took down all " + enemyDeath + " hostiles!\"";
+	foundYou = playerPartner + " came out of the " + scene[2] + ", hands high. \"" + name + " it's me, " + playerPartner + "! I can't believe you took down all " + enemyDeath + " hostiles!\"";
 	return foundYou;
 	};
 var rescueEnd = rescuePlayer(playerName);
