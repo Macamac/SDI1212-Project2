@@ -43,7 +43,7 @@ console.log("The three hotiles become startled and start heading towards his dir
 console.log("Noticing " + playerName + "\'s shiloutte in the dark, the hostiles begin opening fire.");
 console.log("All " + playerName + " could do now is return fire and hope to get out of this mess.");
 var weaponAmmo = 10;
-while (weaponAmmo > 3) {
+while (weaponAmmo > 2) {
 	console.log(playerName + " takes a shot at the hostiles, " + weaponAmmo + " bullets left in the current clip.");
 	weaponAmmo--;
 };
