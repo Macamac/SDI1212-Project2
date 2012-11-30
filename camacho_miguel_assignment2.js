@@ -66,16 +66,23 @@ for (var enemyDeath = 3; enemyDeath > 0; enemyDeath--) {
 	console.log(enemyDeath + " still remain, " + playerName + " fires off " + playerMaxShot + " rounds at the target.");
 };
 console.log("No more remain and now " + playerName + " can rest for a bit.");
-console.log("After a moment of silence, " + playerName + " hears rustling in the bushes near him.");
+console.log("After a moment of silence, " + playerName + " hears rustling sound near him.");
+console.log("Could he have missed one? Could there have been four of them?");
+var scenery = ["grass", "trees", "river"];
+scenery.push("fields");
+var EnemyNumber = [1,2,3,4];
+for (var i=0, j=scenery.length; i < j; i++){
+	console.log ("He glances towards the " + scenery[i] + " for enemy number " + EnemyNumber[i] + ", nothing there.")
+};
 var rescuePlayer = function(name) {
-	var scene = ["sky", "moon", "bushes", "trees", "lake"],
+	var scene2 = ["sky", "moon", "bushes", "trees", "lake"],
 		enemiesPresent = 0,
 		enemyDeath,
 		foundYou;
 		if (enemiesPresent > 0){ 
 		enemyDeath = 0; 
 		} else {enemyDeath = 3};
-	foundYou = playerPartner + " came out of the " + scene[2] + ", hands high. \"" + name + " it's me, " + playerPartner + "! I can't believe you took down all " + enemyDeath + " hostiles!\"";
+	foundYou = playerPartner + " came out of the " + scene2[2] + ", hands high. \"" + name + " it's me, " + playerPartner + "! I can't believe you took down all " + enemyDeath + " hostiles!\"";
 	return foundYou;
 	};
 var rescueEnd = rescuePlayer(playerName);
