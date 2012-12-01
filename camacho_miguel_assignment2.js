@@ -51,7 +51,7 @@ console.log("Fearing he may be low on rounds, " + playerName + " decided to take
 console.log(playerName + " pulls the spare clip from his back pocket out and takes a quick glance.")
 var spareClip = 15;
 if (spareClip > 10){
-	console.log("With the spare clip quite close to full, " + playerName + " decides to not add any more rounds in the spare and continue firing against the hostiles.")
+	console.log("With the spare clip quite close to full with 15 bullets total now, " + playerName + " decides to not add any more rounds in the spare and continue firing against the hostiles.")
 } else {
 	console.log("With not enough rounds in the spare " + playerName +" decides he must make time to fill up the spare clip which could leave him open to the enemy.");
 };
